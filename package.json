@@ -8,11 +8,16 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
     "next": "10.2.2",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-scroll": "^1.8.2",
+    "react-stickynode": "^3.0.5",
+    "theme-ui": "^0.8.4",
+    "typeface-dm-sans": "^1.1.13"
   },
   "devDependencies": {
     "next-sitemap": "^1.6.57"
