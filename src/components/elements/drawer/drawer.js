@@ -47,7 +47,7 @@ export default function Drawer ({
       <Box 
         className='drawer__handler' 
         style={{ display: 'inline-block'}}
-        onClick={toggleHandler }
+        onClick={ toggleHandler }
       >
         {  drawerHandler }
       </Box>
