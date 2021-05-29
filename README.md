@@ -16,3 +16,4 @@ yarn dev
 ##### Installation of necessary dependencies
 ##### Header section configuration [header, mobiledrawer]
 ##### Banner section configuration
+##### KeyFeature configuration [section-header, feature-card-column]
