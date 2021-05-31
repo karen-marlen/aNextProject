@@ -17,3 +17,4 @@ yarn dev
 ##### Header section configuration [header, mobiledrawer]
 ##### Banner section configuration
 ##### KeyFeature configuration [section-header, feature-card-column]
+##### Section Service configuration [service-section, text-feature]
