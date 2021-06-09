@@ -18,3 +18,6 @@ yarn dev
 ##### Banner section configuration
 ##### KeyFeature configuration [section-header, feature-card-column]
 ##### Section Service configuration [service-section, text-feature]
+##### Feature Card configuration [feature, feature-card]
+##### Feature Core configuration [core-feature]
+##### WorkFlow configuration [worflow]
