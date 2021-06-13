@@ -21,4 +21,5 @@ yarn dev
 ##### Feature Card configuration [feature, feature-card]
 ##### Feature Core configuration [ core-feature ]
 ##### WorkFlow configuration [ worflow ]
-##### Pricing Section [ price-card, list ]
+##### Pricing Section configutation [ price-card, list ]
+##### Team Section configuration [ team-section, team-card ]
