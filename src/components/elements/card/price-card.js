@@ -32,7 +32,7 @@ export default function PriceCard({
         />
 
         <Text classNmae='package__price' sx={ styles.price }>
-          { priceWhithUnit }
+          { priceWithUnit }
           <span>/Monthly</span>
         </Text>
 

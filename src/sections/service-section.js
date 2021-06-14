@@ -36,58 +36,42 @@ const data = {
 };
 
 export default function ServiceSection() {
-  const [videOpen, setVideoOpen] = useState(false);
+  const [videoOpen, setVideoOpen] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault();
-
-    setVideoOpen(true);
+    setVideoOpen(true)
   }
+  
 
   return (
-    <section sx={{ variant: 'section.services' }}>
-      <Container sx={ styles.containerBox }>
-        <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt='Thumbnail'/>
-          <Button
-            sx={styles.videoBtn}
-            onClick={handleClick}
-            aria-label='Play Button'
-          >
-            <span>
-              <IoIosPlay />
-            </span>
-          </Button>
+    <section sx={{variant: 'section.services'}}>
+      <Container sx={styles.containerBox}>
+        <Box style={styles.thumbnail}>
+          <Image src={ServiceThumb} alt="thumbnail" />
+          <Button sx={styles.videoBtn} onClick={handleClick} aria-label="Play Button"><span><IoIosPlay /></span></Button>
           <Box sx={styles.shapeBox}>
-            <Image src={ shapePattern } alt='shape' />
+            <Image src={shapePattern} alt="Shape"/>
           </Box>
         </Box>
-        <Box sx={ styles.contentBox }>
+        <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
-
           <Grid sx={styles.grid}>
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
-                  <Image src={feature.Src} alt={feature.altText} sx={styles.icon} />
-
-                  <Box sx={styles.wrapper}>
-                    <Heading sx={styles.wrapper.title}>
-                      {feature.title}
-                    </Heading>
-                    <Text sx={styles.wrapper.subTitle}>{feature.text}</Text>
-                  </Box>
+                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} />
+                <Box sx={styles.wrapper}>
+                  <Heading sx={styles.wrapper.title}>
+                    {feature.title}
+                  </Heading>
+                  <Text sx={styles.wrapper.subTitle}>{feature.text}</Text>
+                </Box>
               </Box>
             ))}
           </Grid>
         </Box>
       </Container>
-
-      <ModalVideo
-        channel='youtube'
-        isOpen={videoOpen}
-        videoId='oxFrwwe'
-        onClose={() => setVideoOpen(false)}
-      />
+      <ModalVideo channel="youtube" isOpen={videoOpen} videoId="DzlqfXC5-S4" onClose={() => setVideoOpen(false)} />
     </section>
   );
 }
@@ -97,7 +81,6 @@ const playPluse = keyframes`
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 1;
   }
-
   to {
 	transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;

@@ -14,11 +14,11 @@ export default function Footer() {
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
-              {data.menuItem.map((item) => (
+              {data.menuItem.map((item, i) => (
                 <Link
-                  path={ item.path }
-                  key={ i }
-                  label={ item.label }
+                  path={item.path}
+                  key={i}
+                  label={item.label}
                   sx={styles.footer.link}
                 />
               ))}

@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/elements/section/section-header';
-import FeatureCard from 'components/elements/card/feature-card.js';
+import FeatureCard from 'components/elements/card/feature-card';
 import Performance from 'assets/feature/performance.svg';
 import Partnership from 'assets/feature/partnership.svg';
 import Subscription from 'assets/feature/subscription.svg';
@@ -45,25 +45,18 @@ const data = [
 
 export default function Feature() {
   return (
-   <section sx={{ variant: 'section.feature' }}>
-      <Container>
-        <SectionHeader 
-          slogan='Quality Features'
-          title='Amazing useful features'
-        />
-
-        <Grid sx={styles.grid}>
-          {data.map((item) => (
-            <FeatureCard 
-              key={item.id}
-              src={item.imgSrc}
-              alt={item.altText}
-              title={item.title}
-              text={item.text}
-            />
-          ))}
-        </Grid>
-      </Container>
+   <section sx={{variant: 'section.feature'}}>
+     <Container>
+       <SectionHeader slogan="Quality Features" title="Amazing useful Features" />
+       <Grid sx={styles.grid}>
+         {data.map((item) => (
+           <FeatureCard src={item.imgSrc}
+            altText = {item.altText}
+            title={item.title}
+            text={item.text} key={item.id} />
+         ))}
+       </Grid>
+     </Container>
    </section>
   );
 }

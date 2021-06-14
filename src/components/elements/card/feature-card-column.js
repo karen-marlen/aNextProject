@@ -12,7 +12,6 @@ export default function FeatureCardColumn({
       <Image src={src} alt={altText} sx={styles.img}/>
       <Box
         sx={styles.wrapper}
-
       >
         <Heading sx={styles.wrapper.title}>
           { title }

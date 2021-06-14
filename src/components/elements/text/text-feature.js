@@ -11,28 +11,17 @@ export default function TextFeature({
   return (
     <Box sx={styles.card}>
       <Box sx={styles.wrapper}>
-        <Text as='p' sx={ styles.wrapper.subTitle }>
-          { subTitle }
-        </Text>
-        <Heading as='h2' sx={styles.wrapper.title}>
-          { title }
-        </Heading>
+        <Text as="p" sx={styles.wrapper.subTitle}>{subTitle}</Text>
+        <Heading as="h2" sx={styles.wrapper.title}>{title}</Heading>
       </Box>
-
       {description && (
-          <Text as='p' className='description' sx={styles.description}>
-            { description }
-          </Text>
+        <Text as="p" className="description" sx={styles.wrapper.description}>{description}</Text>
       )}
-
       {btnName && (
-        <Link href={btnURL} variant='default'>
-          <Button variant='primary' aria-label={btnName}
-          >{ btnName }
-          </Button>
+        <Link href={btnURL} variant="default">
+          <Button variant="primary" aria-label={btnName}>{btnName}</Button>
         </Link>
       )}
-
     </Box>
   );
 }
@@ -60,6 +49,7 @@ const styles = {
       mb: [2, 3],
       lineHeight: 1.5,
       letterSpacing: ['1.5px', null, '2px'],
+      mt: [5]
     },
     title: {
       fontSize: ['24px', null, '28px', '30px', '36px', '42px', null, '48px'],
