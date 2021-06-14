@@ -23,3 +23,4 @@ yarn dev
 ##### WorkFlow configuration [ worflow ]
 ##### Pricing Section configutation [ price-card, list ]
 ##### Team Section configuration [ team-section, team-card ]
+##### Testimonial configuration [ testimonial, rating ]
